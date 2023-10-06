@@ -26,6 +26,7 @@ body {
   justify-content: space-around;
   color: white;
   font-size: 20px;
+  padding: 0px;
 }
 
 .nav-items li {
@@ -71,6 +72,7 @@ body {
 
   .nav-items {
     flex-direction: column;
+    padding-top: 25px;
   }
 
   .nav-items li {
