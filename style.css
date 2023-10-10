@@ -212,4 +212,12 @@ main {
     padding: 0px;
     display: block;
   }
+
+  .me-1 {
+    font-size: 30px;
+  }
+
+  .me-2 {
+    font-size: 20px;
+  }
 }
