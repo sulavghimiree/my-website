@@ -141,8 +141,26 @@ main {
   font-weight: bold;
 }
 
+.about-me:hover {
+  opacity: 0.8;
+}
+
 .about-me:active {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.my-social-sites svg:hover {
+  fill: #132043;
+}
+
+.my-social-sites {
+  display: flex;
+}
+
+.my-social-sites svg {
+  padding: 10px;
+  height: 2em;
+  fill: white;
 }
 
 @media (max-width: 700px) {
