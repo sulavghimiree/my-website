@@ -73,6 +73,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .home-container {
@@ -161,6 +162,20 @@ main {
   padding: 10px;
   height: 2em;
   fill: white;
+}
+
+.skills-container,
+.projects-container,
+.contact-container,
+.about-container {
+  width: 90vw;
+  background-color: #1f4172;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 53.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
 }
 
 @media (max-width: 700px) {
