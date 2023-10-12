@@ -79,7 +79,6 @@ main {
 .home-container {
   width: 90vw;
   background-color: #1f4172;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
   margin-top: 53.5px;
   display: flex;
   flex-direction: row;
@@ -170,12 +169,16 @@ main {
 .about-container {
   width: 90vw;
   background-color: #1f4172;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-  margin-top: 53.5px;
+  padding-top: 53.5px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   height: 100vh;
+  align-items: center;
+}
+
+h2 {
+  font-size: 30px;
+  color: white;
 }
 
 @media (max-width: 700px) {
