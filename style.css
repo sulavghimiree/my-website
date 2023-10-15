@@ -181,6 +181,46 @@ h2 {
   color: white;
 }
 
+.skills-internal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%;
+}
+
+.skill-types {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skillimg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.html,
+.css,
+.js {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.outer {
+  width: 90%;
+  height: 10%;
+  background-color: white;
+  border-radius: 10px;
+}
+
 @media (max-width: 700px) {
   .top-left {
     display: flex;
