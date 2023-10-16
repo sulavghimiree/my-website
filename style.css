@@ -176,6 +176,10 @@ main {
   align-items: center;
 }
 
+.contact-container {
+  height: auto;
+}
+
 .projects-container {
   height: 80vh;
 }
@@ -305,6 +309,46 @@ h2 {
 .message-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.btn-submit {
+  cursor: pointer;
+}
+
+.contact-internal {
+  width: 100%;
+  height: 80%;
+}
+
+.contact-internal form input,
+textarea {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 500px;
+  font-size: 15px;
+}
+
+.btn-submit {
+  padding: 10px 30px;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: darkorange;
+  cursor: pointer;
+  color: white;
+  margin-top: 10px;
+}
+
+@media (max-width: 450px) {
+  .contact-internal form input,
+  textarea {
+    width: 300px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -412,5 +456,10 @@ h2 {
   .projects-internal a {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  .contact-internal form input,
+  textarea {
+    width: 400px;
   }
 }
