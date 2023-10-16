@@ -176,6 +176,10 @@ main {
   align-items: center;
 }
 
+.projects-container {
+  height: 80vh;
+}
+
 h2 {
   font-size: 30px;
   color: white;
@@ -258,6 +262,44 @@ h2 {
 
 .inner-js {
   width: 40%;
+}
+
+.projects-internal {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.projects-internal a {
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.projects-internal a div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #1f4172;
+}
+
+.projects-container a div p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.projects-container a div:hover {
+  background-color: darkorange;
+  transition: 0.25s;
 }
 
 @media (max-width: 700px) {
@@ -352,5 +394,18 @@ h2 {
 
   .skill-img {
     width: 100%;
+  }
+
+  .projects-container {
+    height: auto;
+  }
+
+  .projects-internal {
+    flex-direction: column;
+  }
+
+  .projects-internal a {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
