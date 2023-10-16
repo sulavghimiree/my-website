@@ -302,6 +302,11 @@ h2 {
   transition: 0.25s;
 }
 
+.message-form {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 700px) {
   .top-left {
     display: flex;
