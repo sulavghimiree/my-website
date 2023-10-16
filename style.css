@@ -329,7 +329,7 @@ textarea {
   margin: 10px;
   border-radius: 20px;
   border: none;
-  width: 500px;
+  width: 400px;
   font-size: 15px;
 }
 
@@ -456,10 +456,5 @@ textarea {
   .projects-internal a {
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-
-  .contact-internal form input,
-  textarea {
-    width: 400px;
   }
 }
