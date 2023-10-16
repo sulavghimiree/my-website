@@ -189,14 +189,16 @@ h2 {
   color: white;
 }
 
-.skills-internal {
+.skills-internal,
+.about-internal {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: 100%;
 }
 
-.skill-types {
+.skill-types,
+.about-types {
   width: 50%;
   height: 100%;
   display: flex;
@@ -218,14 +220,16 @@ h2 {
   width: 90%;
 }
 
-.skill-img {
+.skill-img,
+.about-img {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.skillimg {
+.skillimg,
+.aboutimg {
   height: 80%;
   width: 80%;
   object-fit: cover;
@@ -344,6 +348,17 @@ textarea {
   margin-top: 10px;
 }
 
+.about-types p {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+}
+
+.about-types p svg {
+  margin-right: 12px;
+}
+
 @media (max-width: 450px) {
   .contact-internal form input,
   textarea {
@@ -427,7 +442,8 @@ textarea {
     font-size: 20px;
   }
 
-  .skills-container {
+  .skills-container,
+  .about-container {
     height: auto;
   }
 
@@ -435,13 +451,19 @@ textarea {
     flex-direction: column-reverse;
   }
 
-  .skill-types {
+  .about-internal {
+    flex-direction: column;
+  }
+
+  .skill-types,
+  .about-types {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
 
-  .skill-img {
+  .skill-img,
+  .about-img {
     width: 100%;
   }
 
@@ -456,5 +478,11 @@ textarea {
   .projects-internal a {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  .about-types p {
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
