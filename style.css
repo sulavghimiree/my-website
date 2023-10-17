@@ -178,6 +178,7 @@ main {
 
 .contact-container {
   height: auto;
+  padding-bottom: 30px;
 }
 
 .projects-container {
@@ -499,5 +500,10 @@ footer {
     font-size: 16px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  footer {
+    font-size: 18px;
+    height: 50px;
   }
 }
