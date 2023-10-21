@@ -375,12 +375,6 @@ footer {
   font-weight: bold;
 }
 
-aside {
-  width: 90vw;
-  height: 100px;
-  background-color: white;
-}
-
 @media (max-width: 450px) {
   .contact-internal form input,
   textarea {
