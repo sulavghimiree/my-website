@@ -8,7 +8,6 @@ import {
   Instagram,
 } from "lucide-react";
 import ProfileImage from "../assets/profile-img.jpg";
-import Resume from "../assets/resume.pdf";
 
 const Homepage = () => {
   const [isVisible, setIsVisible] = useState(false);
