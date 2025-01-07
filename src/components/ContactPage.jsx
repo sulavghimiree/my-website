@@ -3,12 +3,13 @@ import {
   Send,
   Mail,
   Phone,
-  Linkedin,
-  Github,
+  Instagram,
+  Facebook,
   Twitter,
   MapPin,
 } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import emailjs from "emailjs-com";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -19,6 +20,11 @@ const ContactPage = () => {
   });
   const [status, setStatus] = useState({ type: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const serviceID = import.meta.env.VITE_SERVICE_ID;
+  const templateID = import.meta.env.VITE_TEMPLETE_ID;
+  const userID = import.meta.env.VITE_PUBLIC_KEY;
+  //console.log(serviceID, templateID, userID);
 
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -41,6 +47,8 @@ const ContactPage = () => {
     try {
       // EmailJS integration would go here
       // Example: await emailjs.send(serviceID, templateID, formData, userID);
+
+      await emailjs.send(serviceID, templateID, formData, userID);
 
       setStatus({
         type: "success",
@@ -107,22 +115,25 @@ const ContactPage = () => {
                 <h3 className="text-lg font-semibold mb-4">Connect With Me</h3>
                 <div className="flex space-x-6">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/sulavghimiree/"
                     className="transform transition-all hover:scale-110"
+                    target="_blank"
                   >
-                    <Linkedin className="text-blue-600 w-6 h-6" />
+                    <Instagram className="text-blue-600 w-6 h-6" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.facebook.com/sulavghimiree/"
                     className="transform transition-all hover:scale-110"
+                    target="_blank"
                   >
-                    <Github className="text-gray-800 w-6 h-6" />
+                    <Facebook className="text-blue-600 w-6 h-6" />
                   </a>
                   <a
-                    href="#"
+                    href="https://twitter.com/sulavghimiree/"
                     className="transform transition-all hover:scale-110"
+                    target="_blank"
                   >
-                    <Twitter className="text-blue-400 w-6 h-6" />
+                    <Twitter className="text-blue-600 w-6 h-6" />
                   </a>
                 </div>
               </div>
