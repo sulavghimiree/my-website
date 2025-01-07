@@ -38,7 +38,6 @@ const Navbar = () => {
     { title: "Home", id: "home" },
     { title: "About", id: "about-section" },
     { title: "Projects", id: "projects-section" },
-    { title: "Skills", id: "skills" },
     { title: "Contact", id: "contact" },
   ];
 

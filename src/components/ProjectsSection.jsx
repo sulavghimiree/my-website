@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { ExternalLink, Code, X, Search, Filter } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import ProjectI from "../assets/project-I.png";
+import ProjectII from "../assets/project-ii.png";
+import ProjectIII from "../assets/project-iii.png";
 
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -30,31 +32,43 @@ const ProjectsSection = () => {
         "The Air Quality Predictor is a machine learning-based web app that forecasts air pollution levels using environmental data for better health and safety decisions.",
       image: ProjectI,
       category: "machine-learning",
-      tech: ["Python", "Jupyter", "Scikit-Learn"],
+      tech: ["Python", "Flask", "Scikit-Learn"],
       featured: true,
       demoLink: "https://rabbzy.com",
       codeLink: "https://github.com/sulavghimiree/Air_Quality_Detector_WebApp",
     },
     {
       id: 2,
-      title: "E-commerce Platform",
+      title: "Data Science",
       description:
-        "Full-stack e-commerce solution with real-time inventory management",
+        "Data Science Classification projects using machine learning algorithms",
       longDescription:
-        "Modern e-commerce platform with advanced features including real-time inventory tracking, payment processing, and admin dashboard.",
-      image: "/api/placeholder/600/400",
+        "Data Science classification projects using machine learning algorithms focus on developing models that categorize data into predefined classes based on input features. These projects involve tasks such as spam email detection, medical diagnosis prediction, customer churn analysis, or sentiment classification.",
+      image: ProjectII,
+      category: "machine-learning",
+      tech: ["Python", "Scikit-Learn", "Machine Learning"],
+      demoLink: "https://github.com/sulavghimiree/Classification_Analysis_ML",
+      codeLink: "https://github.com/sulavghimiree/Classification_Analysis_ML",
+    },
+    {
+      id: 2,
+      title: "Portfolio Website",
+      description: "Portfolio website showcasing my work and projects",
+      longDescription:
+        "The Portfolio Website is a personal website that showcases my work, projects, and skills to potential employers, clients, or collaborators. It is created using Reactjs.",
+      image: ProjectIII,
       category: "web-development",
-      tech: ["Next.js", "Node.js", "MongoDB"],
-      demoLink: "https://demo.example.com",
-      codeLink: "https://github.com/example",
+      tech: ["Reactjs", "Tailwind CSS", "Vite"],
+      demoLink: "https://sulavg.com.np",
+      codeLink: "https://github.com/sulavghimiree/my-website",
     },
     // Add more projects as needed
   ];
 
   const categories = [
     { id: "all", name: "All Projects" },
-    { id: "web-development", name: "Web Development" },
     { id: "machine-learning", name: "Machine Learning" },
+    { id: "web-development", name: "Web Development" },
   ];
 
   const filteredProjects = projects.filter((project) => {
