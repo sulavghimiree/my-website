@@ -51,7 +51,7 @@ const ProjectsSection = () => {
       codeLink: "https://github.com/sulavghimiree/Classification_Analysis_ML",
     },
     {
-      id: 2,
+      id: 3,
       title: "Portfolio Website",
       description: "Portfolio website showcasing my work and projects",
       longDescription:
