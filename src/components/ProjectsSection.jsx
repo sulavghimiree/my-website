@@ -4,6 +4,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import ProjectI from "../assets/project-I.png";
 import ProjectII from "../assets/project-ii.png";
 import ProjectIII from "../assets/project-iii.png";
+import ProjectIV from "../assets/project-iv.png";
 
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -61,6 +62,18 @@ const ProjectsSection = () => {
       tech: ["Reactjs", "Tailwind CSS", "Vite"],
       demoLink: "https://sulavg.com.np",
       codeLink: "https://github.com/sulavghimiree/my-website",
+    },
+    {
+      id: 4,
+      title: "Diet and Exercise Recommender",
+      description: "Diet and Exercise Recommender using machine learning",
+      longDescription:
+        "The Diet and Exercise Recommender is a machine learning-based web app that provides personalized diet and exercise recommendations based on user preferences and health goals.",
+      image: ProjectIV,
+      category: "machine-learning",
+      tech: ["Python", "Flask", "Scikit-Learn"],
+      demoLink: "https://suistarfish.com",
+      codeLink: "https://github.com/sulavghimiree/Workout_Recommendation",
     },
     // Add more projects as needed
   ];
