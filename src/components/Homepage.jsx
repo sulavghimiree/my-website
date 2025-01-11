@@ -66,7 +66,7 @@ const Homepage = () => {
               <button
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1kje_bESWnpDg8VLZzXq4k_GoXtkLcdZj/view?usp=sharing",
+                    "https://drive.google.com/file/d/1XgQciOuvgkKuEc2XwwWqntbOlzGLgJDR/view?usp=sharing",
                     "_blank"
                   )
                 }

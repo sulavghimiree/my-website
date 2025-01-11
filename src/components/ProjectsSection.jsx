@@ -71,7 +71,7 @@ const ProjectsSection = () => {
         "The Diet and Exercise Recommender is a machine learning-based web app that provides personalized diet and exercise recommendations based on user preferences and health goals.",
       image: ProjectIV,
       category: "machine-learning",
-      tech: ["Python", "Flask", "Scikit-Learn"],
+      tech: ["Python", "React", "Scikit-Learn"],
       demoLink: "https://suistarfish.com",
       codeLink: "https://github.com/sulavghimiree/Workout_Recommendation",
     },
