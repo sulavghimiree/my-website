@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { ExternalLink, Code, X, Search, Filter } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import ProjectI from "../assets/project-I.png";
 import ProjectII from "../assets/project-ii.png";
+import ProjectI from "../assets/project-i.png";
 import ProjectIII from "../assets/project-iii.png";
 import ProjectIV from "../assets/project-iv.png";
+import Blog from '../assets/blog.png'
 
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -40,7 +41,7 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: "Data Science",
+      title: "Machine Learning Analysis",
       description:
         "Data Science Classification projects using machine learning algorithms",
       longDescription:
@@ -53,15 +54,15 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      title: "Portfolio Website",
-      description: "Portfolio website showcasing my work and projects",
+      title: "Blog App",
+      description: "Blog App I created using Django and template engine.",
       longDescription:
-        "The Portfolio Website is a personal website that showcases my work, projects, and skills to potential employers, clients, or collaborators. It is created using Reactjs.",
-      image: ProjectIII,
+        "A simple yet powerful blog application that allows users to create, edit, and publish posts. The app features a clean and intuitive interface, enabling content creators to share their thoughts with ease. With a user-friendly dashboard, writers can manage their posts, categorize content, and interact with readers through comments. Built using modern web technologies, this blog app offers a seamless and engaging experience for both writers and readers",
+      image: Blog,
       category: "web-development",
-      tech: ["Reactjs", "Tailwind CSS", "Vite"],
-      demoLink: "https://sulavg.com.np",
-      codeLink: "https://github.com/sulavghimiree/my-website",
+      tech: ["Django", "HTML/CSS", "Template Engine"],
+      demoLink: "https://blogs.sulavg.com.np",
+      codeLink: "https://github.com/sulavghimiree/Blogs_Django",
     },
     {
       id: 4,
