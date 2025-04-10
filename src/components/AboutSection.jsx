@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Mail, ArrowRight, Code, Database, Brain } from "lucide-react";
+import { Mail, ArrowRight, Code, Server, Brain } from "lucide-react";
 import AboutImg from "../assets/about-img.jpeg";
 
 const AboutSection = () => {
@@ -19,14 +19,21 @@ const AboutSection = () => {
 
   const skills = [
     { name: "Machine Learning", icon: Brain },
-    { name: "Data Science", icon: Database },
+    { name: "Python/Django", icon: Server },
     { name: "Web Development", icon: Code },
   ];
 
   const experiences = [
     {
       year: "2025",
-      title: "Data Scientist",
+      title: "Django Developer",
+      company: "Self Employed",
+      description:
+        "Currently creating different Django projects using Template engine and RESTful API's.",
+    },
+    {
+      year: "2025",
+      title: "Machine Learning Enthuiast",
       company: "Self Employed",
       description:
         "Currently Researching in different datasets and applying machine learning algorithms to solve real-world problems.",
@@ -59,13 +66,7 @@ const AboutSection = () => {
                 </span>
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                Welcome to my space! I am passionate about learning machine
-                learning and data science, exploring the power of data to
-                uncover insights and solve real-world problems. Alongside my
-                journey in data science, I also enjoy developing websites,
-                bringing ideas to life through creative and functional web
-                designs. This blend of analytical thinking and creativity drives
-                my curiosity and growth every day.
+                I’m a Django Developer and Web Developer with a growing passion for Machine Learning. I specialize in building scalable, secure, and user-friendly web applications using Django and modern web technologies. I enjoy exploring how machine learning can be integrated into real-world applications to solve complex problems and enhance user experiences. Always eager to learn and innovate at the intersection of web development and AI.
               </p>
             </div>
 

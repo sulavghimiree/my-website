@@ -49,16 +49,13 @@ const Homepage = () => {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 font-light">
-                Aspiring Data Scientist | Machine Learning Enthusiast | Web
+                Django Developer | Machine Learning Enthusiast | Web
                 Developer
               </p>
             </div>
 
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-lg">
-              I thrive at the intersection of data, creativity, and technology.
-              Passionate about turning raw data into meaningful insights and
-              building intuitive web experiences. Let's create something
-              impactful!
+            Passionate Django Developer and Web Developer with a strong interest in Machine Learning. Skilled in building robust web applications and integrating intelligent solutions to create impactful digital experiences
             </p>
 
             {/* CTA Buttons */}
