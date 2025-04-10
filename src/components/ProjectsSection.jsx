@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ExternalLink, Code, X, Search, Filter } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import ProjectII from "../assets/project-ii.png";
-import ProjectI from "../assets/project-i.png";
+import ProjectI from "../assets/project-I.png";
 import ProjectIII from "../assets/project-iii.png";
 import ProjectIV from "../assets/project-iv.png";
 import Blog from '../assets/blog.png'
