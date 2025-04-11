@@ -3,9 +3,9 @@ import { ExternalLink, Code, X, Search, Filter } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import ProjectII from "../assets/project-ii.png";
 import ProjectI from "../assets/project-I.png";
-import ProjectIII from "../assets/project-iii.png";
 import ProjectIV from "../assets/project-iv.png";
 import Blog from '../assets/blog.png'
+import Study from '../assets/studdy.png'
 
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -33,13 +33,26 @@ const ProjectsSection = () => {
       longDescription:
         "A simple yet powerful blog application that allows users to create, edit, and publish posts. The app features a clean and intuitive interface, enabling content creators to share their thoughts with ease. With a user-friendly dashboard, writers can manage their posts, categorize content, and interact with readers through comments. Built using modern web technologies, this blog app offers a seamless and engaging experience for both writers and readers",
       image: Blog,
-      category: "web-development",
+      category: "Django",
       tech: ["Django", "HTML/CSS", "Template Engine"],
       demoLink: "https://blogs.sulavg.com.np",
       codeLink: "https://github.com/sulavghimiree/Blogs_Django",
     },
     {
       id: 2,
+      title: "Studdy Buddy",
+      description:
+        "Studdy Buddy is a web app made using Django framework and frontend is handled by its template engine.",
+      longDescription:
+        "StudyBud is a Django-based web application designed to bring students together in virtual rooms for collaboration, discussion, and study. Users can create accounts, join rooms, participate in conversations, and build a study community.",
+      image: Study,
+      category: "Django",
+      tech: ["Django", "HTML/CSS", "Template Engine"],
+      demoLink: "https://github.com/sulavghimiree/Study_Buddy",
+      codeLink: "https://github.com/sulavghimiree/Study_Buddy",
+    },
+    {
+      id: 3,
       title: "Machine Learning Analysis",
       description:
         "Data Science Classification projects using machine learning algorithms",
@@ -52,7 +65,7 @@ const ProjectsSection = () => {
       codeLink: "https://github.com/sulavghimiree/Classification_Analysis_ML",
     },
     {
-      id: 3,
+      id: 4,
       title: "Air Quality Predictor",
       description: "Air Quality Predicttor using machine learning predictions",
       longDescription:
@@ -61,11 +74,11 @@ const ProjectsSection = () => {
       category: "machine-learning",
       tech: ["Python", "Flask", "Scikit-Learn"],
       featured: true,
-      demoLink: "https://rabbzy.com",
+      demoLink: "https://github.com/sulavghimiree/Air_Quality_Detector_WebApp",
       codeLink: "https://github.com/sulavghimiree/Air_Quality_Detector_WebApp",
     },
     {
-      id: 4,
+      id: 5,
       title: "Diet and Exercise Recommender",
       description: "Diet and Exercise Recommender using machine learning",
       longDescription:
@@ -73,7 +86,7 @@ const ProjectsSection = () => {
       image: ProjectIV,
       category: "machine-learning",
       tech: ["Python", "React", "Scikit-Learn"],
-      demoLink: "https://suistarfish.com",
+      demoLink: "https://github.com/sulavghimiree/Workout_Recommendation",
       codeLink: "https://github.com/sulavghimiree/Workout_Recommendation",
     },
     // Add more projects as needed
@@ -82,7 +95,7 @@ const ProjectsSection = () => {
   const categories = [
     { id: "all", name: "All Projects" },
     { id: "machine-learning", name: "Machine Learning" },
-    { id: "web-development", name: "Web Development" },
+    { id: "Django", name: "Django" },
   ];
 
   const filteredProjects = projects.filter((project) => {
