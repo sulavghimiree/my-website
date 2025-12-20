@@ -4,8 +4,8 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import ProjectII from "../assets/project-ii.png";
 import ProjectI from "../assets/project-I.png";
 import ProjectIV from "../assets/project-iv.png";
-import Blog from '../assets/blog.png'
-import Study from '../assets/studdy.png'
+import Blog from "../assets/blog.png";
+import Study from "../assets/studdy.png";
 
 const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -89,6 +89,35 @@ const ProjectsSection = () => {
       demoLink: "https://github.com/sulavghimiree/Workout_Recommendation",
       codeLink: "https://github.com/sulavghimiree/Workout_Recommendation",
     },
+    {
+      id: 6,
+      title: "Spam Email Detector",
+      description: "Spam Email Detector using machine learning algorithms",
+      longDescription:
+        "The Spam Email Detector is a machine learning-based web app that identifies and filters out spam emails to improve email security and user experience.",
+      image:
+        "https://media.licdn.com/dms/image/v2/D5622AQH81vX6KkCZYQ/feedshare-shrink_1280/B56ZlrRjo3KEAs-/0/1758441389763?e=1767830400&v=beta&t=cZFsZo3K5Xz42BKDHACihOsOj1LCLGMrLgN-6TGYQ3Q",
+      category: "Natural Language Processing",
+      tech: ["Python", "React", "Scikit-Learn"],
+      demoLink: "https://github.com/sulavghimiree/Email_Fraud_Detection",
+      codeLink: "https://github.com/sulavghimiree/Email_Fraud_Detection",
+    },
+    {
+      id: 7,
+      title: "Sentiment Analyzer using BERT",
+      description:
+        "Sentiment Analyzer using BERT and Hugging Face transformers",
+      longDescription:
+        "The Sentiment Analyzer is a machine learning-based web app that uses BERT and Hugging Face transformers to analyze and classify the sentiment of text data.",
+      image:
+        "https://media.licdn.com/dms/image/v2/D5622AQH2dxwrwZcbaA/feedshare-shrink_800/B56ZlxAEsaHUAg-/0/1758537470313?e=1767830400&v=beta&t=SBAsk-u2utkSiJdWm3ZONGFW-0GAqurgDw8hbwagxtc",
+      category: "Natural Language Processing",
+      tech: ["Python", "React", "TensorFlow"],
+      demoLink:
+        "https://github.com/sulavghimiree/Sentiment_Analyzer_Using_BERT_Transformers",
+      codeLink:
+        "https://github.com/sulavghimiree/Sentiment_Analyzer_Using_BERT_Transformers",
+    },
     // Add more projects as needed
   ];
 
@@ -96,6 +125,7 @@ const ProjectsSection = () => {
     { id: "all", name: "All Projects" },
     { id: "machine-learning", name: "Machine Learning" },
     { id: "Django", name: "Django" },
+    { id: "Natural Language Processing", name: "Natural Language Processing" },
   ];
 
   const filteredProjects = projects.filter((project) => {

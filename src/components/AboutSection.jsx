@@ -19,24 +19,18 @@ const AboutSection = () => {
 
   const skills = [
     { name: "Machine Learning", icon: Brain },
-    { name: "Python/Django", icon: Server },
+    { name: "Data Science", icon: Server },
     { name: "Web Development", icon: Code },
+    { name: "Natural Language Processing", icon: Brain },
   ];
 
   const experiences = [
     {
       year: "2025",
-      title: "Django Developer",
-      company: "Self Employed",
+      title: "AI Trainer",
+      company: "RWS Group",
       description:
-        "Currently creating different Django projects using Template engine and RESTful API's.",
-    },
-    {
-      year: "2025",
-      title: "Machine Learning Enthuiast",
-      company: "Self Employed",
-      description:
-        "Currently Researching in different datasets and applying machine learning algorithms to solve real-world problems.",
+        "Converting raw data into high-quality training data for AI models, ensuring accuracy and relevance.",
     },
     {
       year: "2024",
@@ -66,7 +60,13 @@ const AboutSection = () => {
                 </span>
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                I’m a Django Developer and Web Developer with a growing passion for Machine Learning. I specialize in building scalable, secure, and user-friendly web applications using Django and modern web technologies. I enjoy exploring how machine learning can be integrated into real-world applications to solve complex problems and enhance user experiences. Always eager to learn and innovate at the intersection of web development and AI.
+                I am an aspiring Machine Learning and Data Science practitioner
+                with a strong interest in Natural Language Processing (NLP). I
+                enjoy working with data-driven models, extracting insights from
+                complex datasets, and building intelligent systems that solve
+                real-world problems. Passionate about learning, experimentation,
+                and applying AI techniques to create impactful and scalable
+                solutions.
               </p>
             </div>
 

@@ -49,13 +49,16 @@ const Homepage = () => {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 font-light">
-                Django Developer | Machine Learning Enthusiast | Web
-                Developer
+                Machine Learning | Data Science | Django Developer
               </p>
             </div>
 
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-lg">
-            Passionate Django Developer and Web Developer with a strong interest in Machine Learning. Skilled in building robust web applications and integrating intelligent solutions to create impactful digital experiences
+              Passionate Machine Learning and Data Science enthusiast with a
+              strong focus on Natural Language Processing (NLP). Skilled in
+              building data-driven models, extracting insights from complex
+              datasets, and developing intelligent systems that solve real-world
+              problems.
             </p>
 
             {/* CTA Buttons */}
@@ -63,7 +66,7 @@ const Homepage = () => {
               <button
                 onClick={() =>
                   window.open(
-                    "https://drive.google.com/file/d/1YlY0gzrOfFuZc2x69SAVizpE2pncJEuk/view?usp=sharing",
+                    "https://drive.google.com/file/d/1frusmTysN9Ee9LO442c6Uy0ITzu7mTrT/view?usp=drive_link",
                     "_blank"
                   )
                 }

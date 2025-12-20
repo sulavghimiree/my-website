@@ -71,7 +71,6 @@ const Footer = () => {
           {/* Left Section - About */}
           <div className="flex flex-col justify-center items-center md:items-start">
             <p className="text-gray-600 text-sm leading-relaxed text-center md:text-left">
-              Crafting innovative web solutions
               <br />
               Made with <Heart className="w-4 h-4 inline text-red-500 mx-1" />
               and modern tech
